@@ -1,0 +1,26 @@
+<!--<p>comp-one works!</p>-->
+<!--string interpolation means string binding {{}}-->
+<p>{{studentName}}</p>
+<h3>{{getStudentName()}}</h3>
+
+
+
+<!--property data binding [________]-->
+<input type="text" [value]="studentName1"><br>
+<input [type]= "inputtype">
+<hr>
+<!--event data binding()-->
+<button (click)="printMessageByTextBox()">click</button>
+<input type="text" (keypress)="printMessage()">
+<p (mouseover)="mouseOverChange()"
+    (mouseleave)="mouseLeave()">{{studentName1}}
+</p>  
+<hr>
+
+
+
+<!--you have to pass element as a parameter($event)-->
+<input type="text" (keypress)="getVlaueFromTheTeaxBox($event)">
+<hr>
+
+<input type="text" [value]="studentName" (keyup)="getVlaueFromTheTeaxBox($event)">
